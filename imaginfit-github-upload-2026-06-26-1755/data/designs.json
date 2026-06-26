@@ -1,0 +1,323 @@
+[
+  {
+    "id": "new-halter-border-set",
+    "title": "Black Co-ord Set",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Sleeveless top with palazzo",
+    "collection": "Traditional",
+    "image": "/uploads/new-collection-halter-set.jpeg",
+    "config": {
+      "category": "Suit",
+      "fabric": "Cotton",
+      "color": "Black",
+      "neckline": "Halter",
+      "sleeves": "Sleeveless",
+      "fit": "A-Line",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Lining"
+      ],
+      "layout": "border-coord"
+    },
+    "price": 3999
+  },
+  {
+    "id": "new-everyday-printed-kurti",
+    "title": "Green Kurti With Palazzo",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Printed everyday kurti",
+    "collection": "Traditional",
+    "image": "/uploads/new-collection-everyday-kurti.jpeg",
+    "config": {
+      "category": "Kurti",
+      "fabric": "Cotton",
+      "color": "Sage Green",
+      "neckline": "V Neck",
+      "sleeves": "Three Quarter",
+      "fit": "Relaxed",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ],
+      "layout": "printed-kurti"
+    },
+    "price": 2499
+  },
+  {
+    "id": "new-lilac-tassel-tunic",
+    "title": "Lilac Short Kurti",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Peacock print with tassels",
+    "collection": "Traditional",
+    "image": "/uploads/new-collection-lilac-tunic.jpeg",
+    "config": {
+      "category": "Kurti",
+      "fabric": "Cotton",
+      "color": "Lilac",
+      "neckline": "Round",
+      "sleeves": "Three Quarter",
+      "fit": "Relaxed",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Embroidery"
+      ],
+      "layout": "tassel-tunic"
+    },
+    "price": 2499
+  },
+  {
+    "id": "new-striped-shirt-trouser-set",
+    "title": "Striped Shirt With Cream Pants",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Formal shirt and trouser look",
+    "collection": "Semiformal",
+    "image": "/uploads/new-collection-striped-shirt-set.jpeg",
+    "config": {
+      "category": "Shirt",
+      "fabric": "Linen",
+      "color": "White",
+      "neckline": "Collar",
+      "sleeves": "Full",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ],
+      "layout": "striped-shirt-cream-pants"
+    },
+    "price": 1899
+  },
+  {
+    "id": "new-burgundy-wrap-shirt",
+    "title": "Maroon Top With Black Palazzo",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Pinstripe wrap-style top",
+    "collection": "Semiformal",
+    "image": "/uploads/new-collection-burgundy-wrap-shirt.jpeg",
+    "config": {
+      "category": "Shirt",
+      "fabric": "Linen",
+      "color": "Burgundy",
+      "neckline": "Collar",
+      "sleeves": "Full",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Lining"
+      ],
+      "layout": "burgundy-wrap-palazzo"
+    },
+    "price": 2999
+  },
+  {
+    "id": "new-white-shirt-wide-trouser",
+    "title": "White Shirt With Beige Pants",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Classic shirt and wide pants",
+    "collection": "Semiformal",
+    "image": "/uploads/new-collection-white-shirt-trouser.jpeg",
+    "config": {
+      "category": "Shirt",
+      "fabric": "Linen",
+      "color": "White",
+      "neckline": "Collar",
+      "sleeves": "Three Quarter",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ],
+      "layout": "white-shirt-beige-trouser"
+    },
+    "price": 3299
+  },
+  {
+    "id": "new-black-shirt-grey-trouser",
+    "title": "Black Shirt With Grey Trousers",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Relaxed semiformal office fit",
+    "collection": "Semiformal",
+    "image": "/uploads/new-collection-black-shirt-grey-trouser.png",
+    "config": {
+      "category": "Shirt",
+      "fabric": "Linen",
+      "color": "Black",
+      "neckline": "Collar",
+      "sleeves": "Three Quarter",
+      "fit": "Relaxed",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ],
+      "layout": "black-shirt-grey-trouser"
+    },
+    "price": 2999
+  },
+  {
+    "id": "new-blue-suit-dupatta",
+    "title": "Blue Suit With Dupatta",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Soft embroidered suit set",
+    "collection": "Traditional",
+    "image": "/uploads/new-collection-blue-suit.jpeg",
+    "config": {
+      "category": "Suit",
+      "fabric": "Cotton",
+      "color": "Sky Blue",
+      "neckline": "Round",
+      "sleeves": "Full",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Embroidery"
+      ],
+      "layout": "blue-suit-dupatta"
+    },
+    "price": 3999
+  },
+  {
+    "id": "new-ikat-coord-set",
+    "title": "Black Printed Co-ord Set",
+    "designer": "ImaginFit Studio",
+    "likes": "New",
+    "note": "Jacket and wide pant co-ord",
+    "collection": "Semiformal",
+    "image": "/uploads/new-collection-ikat-coord.jpeg",
+    "config": {
+      "category": "Suit",
+      "fabric": "Linen",
+      "color": "Graphite",
+      "neckline": "Collar",
+      "sleeves": "Full",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ],
+      "layout": "ikat-coord"
+    },
+    "price": 4999
+  },
+  {
+    "id": "suit",
+    "title": "Festive Silk Suit Set",
+    "designer": "Meher",
+    "likes": "2.4k likes",
+    "note": "Occasion wear",
+    "collection": "Traditional",
+    "image": "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&w=700&q=85",
+    "config": {
+      "category": "Suit",
+      "fabric": "Silk",
+      "color": "Graphite",
+      "neckline": "V Neck",
+      "sleeves": "Three Quarter",
+      "fit": "Long",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Embroidery",
+        "Lining"
+      ],
+      "layout": "blue-suit-dupatta"
+    },
+    "price": 3999
+  },
+  {
+    "id": "shirt",
+    "title": "Office Linen Shirt",
+    "designer": "Riya",
+    "likes": "970 likes",
+    "note": "Work ready",
+    "collection": "Semiformal",
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=85",
+    "config": {
+      "category": "Shirt",
+      "fabric": "Linen",
+      "color": "Charcoal",
+      "neckline": "Collar",
+      "sleeves": "Full",
+      "fit": "Tailored",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Monogram"
+      ],
+      "layout": "striped-shirt-cream-pants"
+    },
+    "price": 1899
+  },
+  {
+    "id": "customer-reference-rose",
+    "title": "Silver Reference Mood",
+    "designer": "Customer",
+    "likes": "Reference",
+    "note": "Use as a tailoring idea",
+    "collection": "Customer References",
+    "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=85",
+    "config": {
+      "category": "Dress",
+      "fabric": "Georgette",
+      "color": "Silver",
+      "neckline": "Boat",
+      "sleeves": "Sleeveless",
+      "fit": "A-Line",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Lining"
+      ]
+    },
+    "price": 3299
+  },
+  {
+    "id": "finished-outfit-sage",
+    "title": "Finished Slate Kurti",
+    "designer": "ImaginFit",
+    "likes": "Delivered",
+    "note": "Completed customer outfit",
+    "collection": "Finished Outfits",
+    "image": "https://images.unsplash.com/photo-1603217040830-34473db521a0?auto=format&fit=crop&w=700&q=85",
+    "config": {
+      "category": "Kurti",
+      "fabric": "Cotton",
+      "color": "Slate",
+      "neckline": "Round",
+      "sleeves": "Three Quarter",
+      "fit": "Relaxed",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Pockets"
+      ]
+    },
+    "price": 2499
+  },
+  {
+    "id": "fabric-sample-silk",
+    "title": "Silk Fabric Sample",
+    "designer": "Fabric Desk",
+    "likes": "Sample",
+    "note": "Premium drape close-up",
+    "collection": "Fabric Samples",
+    "image": "https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=700&q=85",
+    "config": {
+      "category": "Suit",
+      "fabric": "Silk",
+      "color": "Charcoal",
+      "neckline": "V Neck",
+      "sleeves": "Full",
+      "fit": "Long",
+      "measurement": "Tailored Body",
+      "extras": [
+        "Embroidery",
+        "Lining"
+      ]
+    },
+    "price": 3999
+  }
+]

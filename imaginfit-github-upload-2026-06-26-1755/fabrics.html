@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Fabric | ImaginFit Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+        <span class="brand-mark">IF</span>
+        <span>ImaginFit Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html#gallery">Collections</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="./design.html">Design Studio</a>
+        <a href="./login.html" data-customer-login>Login</a>
+      </nav>
+      <a class="icon-button cart-trigger" href="./design.html" aria-label="Open design studio">
+        <span class="cart-icon" aria-hidden="true"></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="fabric-page-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fabric library</p>
+            <h1>Choose the fabric before the fit.</h1>
+          </div>
+          <p>
+            Compare comfort, best use, care, and price range so customers can choose with confidence.
+          </p>
+        </div>
+
+        <div class="fabric-filter-tabs" data-fabric-filters></div>
+        <div class="fabric-selection-grid" data-fabric-options></div>
+      </section>
+
+      <section class="fabric-page-shell fabric-request-section" aria-label="Custom fabric request">
+        <div class="fabric-request-card">
+          <div>
+            <p class="eyebrow">Looking for another fabric?</p>
+            <h2>We have uploaded a limited amount of fabrics.</h2>
+            <p>
+              If you want a fabric of your choice, show us on WhatsApp. We will surely
+              find something relatable to your reference and outfit idea.
+            </p>
+          </div>
+          <a
+            class="checkout-button"
+            href="https://web.whatsapp.com/send?text=Hi%20ImaginFit%20Studio%2C%20I%20want%20a%20fabric%20of%20my%20choice.%20I%20will%20share%20my%20reference%20photo%20and%20outfit%20idea."
+            target="_blank"
+            rel="noopener"
+          >
+            Ask Fabric Consultant
+          </a>
+        </div>
+      </section>
+
+      <section class="fabric-page-shell fabric-photo-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fabric photos</p>
+            <h2>Samples and close-ups</h2>
+          </div>
+          <p>Use this page for all fabric pictures in the future.</p>
+        </div>
+        <div class="gallery-grid fabric-photo-grid" data-fabric-photos></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+          <span class="brand-mark">IF</span>
+          <span>ImaginFit Studio</span>
+        </a>
+        <p>Custom clothing that starts with your imagination and ends with your measurements.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="./index.html#gallery">Collections</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="./design.html">Design Studio</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="mailto:hello@imaginfit.example">hello@imaginfit.example</a>
+        <span>Mon-Sat, 10 AM-7 PM</span>
+        <span>Made-to-order clothing studio</span>
+      </div>
+    </footer>
+
+    <script src="./fabrics.js"></script>
+  </body>
+</html>

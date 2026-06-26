@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImaginFit Studio | Collections</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+        <span class="brand-mark">IF</span>
+        <span>ImaginFit Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#gallery">Collections</a>
+        <a href="#wardrobe">Wardrobe</a>
+        <a href="#start-guide">Start Here</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="#proof">Reviews</a>
+        <a href="#assistant">Assistant</a>
+        <a href="./login.html" data-customer-login>Login</a>
+      </nav>
+      <a class="icon-button cart-trigger" href="./design.html" aria-label="Open design studio">
+        <span class="cart-icon" aria-hidden="true"></span>
+      </a>
+    </header>
+    <a class="floating-assistant" href="#assistant">Assistant</a>
+    <nav class="mobile-order-bar" aria-label="Mobile quick actions">
+      <a href="#home"><span>Home</span>Studio</a>
+      <a href="#dream-fit"><span>Upload</span>Dream Fit</a>
+      <a href="#gallery"><span>Looks</span>Browse</a>
+      <a href="#assistant"><span>Ask</span>Assistant</a>
+      <a class="mobile-order-primary" href="./design.html"><span>Start</span>Design</a>
+    </nav>
+    <section class="site-intro" data-site-intro aria-label="ImaginFit welcome video">
+      <video data-site-intro-video autoplay muted playsinline preload="auto">
+        <source src="./assets/site-intro.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <main>
+      <section class="hero" id="home" aria-label="Custom clothing hero">
+        <video
+          data-hero-video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="ImaginFit custom clothing preview"
+        >
+          <source src="./assets/home-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-panel" aria-label="Interactive video controls">
+          <div>
+            <span>Live preview</span>
+            <strong>See it, choose it, customize it.</strong>
+          </div>
+          <div class="hero-video-actions">
+            <button type="button" data-hero-video-toggle aria-label="Pause video">Pause</button>
+            <button type="button" data-hero-audio-toggle aria-label="Unmute video">Sound</button>
+          </div>
+        </div>
+        <div class="hero-choice-dock" aria-label="Quick start choices">
+          <a href="#gallery">
+            <span>01</span>
+            Pick a Look
+          </a>
+          <a href="./fabrics.html">
+            <span>02</span>
+            Choose Fabric
+          </a>
+          <a href="./design.html">
+            <span>03</span>
+            Design Your Fit
+          </a>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Custom outfits made to order</p>
+          <h1>Design it. Measure it. Stitch it.</h1>
+          <p>Upload your idea, choose fabric, customize details, add measurements, and get it stitched to your size.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="./design.html">Start Your Custom Order</a>
+            <a class="secondary-link fabric-link" href="#gallery">Explore Collections</a>
+          </div>
+          <div class="hero-mini-proof" aria-label="Ordering proof">
+            <span>From ₹1,999</span>
+            <span>Tailor measurements</span>
+            <span>Assistant guidance</span>
+          </div>
+          <div class="hero-trust-ribbon" aria-label="Studio trust signals">
+            <span>Fabric confirmed before stitching</span>
+            <span>Fit notes saved</span>
+            <span>WhatsApp consultant support</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="luxury-experience" aria-label="Luxury tailoring experience">
+        <article>
+          <span>Private Atelier</span>
+          <strong>One-on-one outfit guidance</strong>
+          <p>Your idea is reviewed like a studio brief before stitching starts.</p>
+        </article>
+        <article>
+          <span>Fabric Concierge</span>
+          <strong>Texture-first selection</strong>
+          <p>Pick by mood, occasion, drape, comfort, and final finish.</p>
+        </article>
+        <article>
+          <span>Made For You</span>
+          <strong>Measurements attached</strong>
+          <p>Every order keeps fit notes, body notes, and alteration preference.</p>
+        </article>
+        <a href="./design.html">Enter Design Studio</a>
+      </section>
+
+      <section class="dream-fit-upload" id="dream-fit" aria-label="Upload your dream fit">
+        <div class="dream-fit-copy">
+          <p class="eyebrow">Dream fit upload</p>
+          <h2>Upload your dream fit.</h2>
+          <p>Have a Pinterest look, screenshot, boutique photo, or outfit idea? Start with your reference and we will help turn it into a stitched custom fit.</p>
+          <div class="dream-fit-actions">
+            <a class="primary-link" href="./design.html#reference">Upload Reference</a>
+            <a class="secondary-link" href="#assistant">Ask Assistant First</a>
+          </div>
+        </div>
+        <button class="dream-fit-drop" type="button" data-dream-fit-open aria-expanded="false" aria-controls="dream-fit-panel">
+          <span>Drop your idea here</span>
+          <strong>Upload photo</strong>
+          <small>Screenshot, Pinterest image, boutique reference, or sketch</small>
+        </button>
+        <div class="dream-fit-panel" id="dream-fit-panel" data-dream-fit-panel hidden>
+          <div>
+            <strong>Share your reference</strong>
+            <p>Choose a photo from your gallery or paste a Pinterest / website link.</p>
+          </div>
+          <label class="dream-fit-choice">
+            <span>Upload from gallery</span>
+            <small>Photo, screenshot, boutique reference</small>
+            <input data-dream-fit-file type="file" accept="image/*" />
+          </label>
+          <form class="dream-fit-link-form" data-dream-fit-link-form>
+            <label>
+              Paste Pinterest or website link
+              <input data-dream-fit-link type="url" placeholder="https://pinterest.com/..." />
+            </label>
+            <button type="submit">Use This Link</button>
+          </form>
+          <p class="dream-fit-status" data-dream-fit-status>After adding your idea, the design studio will open automatically.</p>
+        </div>
+      </section>
+
+      <section class="start-guide" id="start-guide" aria-label="Start your custom outfit">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Start here</p>
+            <h2>Choose the easiest way to begin.</h2>
+          </div>
+          <p>Whether you already have a photo, want to browse outfits, or need help choosing fabric, the next step is simple.</p>
+        </div>
+        <div class="start-guide-grid">
+          <a href="./design.html#reference">
+            <span>01</span>
+            <strong>I have a reference photo</strong>
+            <p>Upload your idea and tell us what you want changed.</p>
+          </a>
+          <a href="#gallery">
+            <span>02</span>
+            <strong>I want to browse designs</strong>
+            <p>Pick a look from the collection and customize it.</p>
+          </a>
+          <a href="./fabrics.html">
+            <span>03</span>
+            <strong>I want fabric first</strong>
+            <p>Choose a fabric mood, then build the outfit around it.</p>
+          </a>
+          <a href="#assistant">
+            <span>04</span>
+            <strong>I need help deciding</strong>
+            <p>Ask the assistant about style, budget, sizing, or delivery.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="money-strip" aria-label="ImaginFit order highlights">
+        <article>
+          <strong>Simple start</strong>
+          <span>Pick a look, upload a photo, or begin with fabric.</span>
+        </article>
+        <article>
+          <strong>Clear quote</strong>
+          <span>Final price is confirmed after fabric and details.</span>
+        </article>
+        <article>
+          <strong>Guided order</strong>
+          <span>Assistant and WhatsApp support keep the process easy.</span>
+        </article>
+      </section>
+
+      <section class="order-confidence" aria-label="Order confidence">
+        <article>
+          <span>01</span>
+          <strong>Choose or upload</strong>
+          <p>Select a look, bring a reference, or start from a blank custom fit.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Confirm before stitching</strong>
+          <p>Fabric, color, details, quote, and measurements are checked before work starts.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Stay supported</strong>
+          <p>WhatsApp consultant support and alteration notes keep the order clear.</p>
+        </article>
+      </section>
+
+      <section class="production-system" aria-label="Production workflow">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>From your idea to a stitched outfit.</h2>
+          <p>Every order follows clear checkpoints, so you always know what is being confirmed before stitching starts.</p>
+        </div>
+        <div class="production-board">
+          <div class="production-visuals" aria-label="Order visuals">
+            <img src="./assets/fabric-uploads/fabric-02.jpeg" alt="Soft fabric selected for custom order" />
+            <img src="./uploads/new-collection-lilac-tunic.jpeg" alt="Lilac custom tunic reference" />
+            <img src="./uploads/new-collection-ikat-coord.jpeg" alt="Printed custom co-ord reference" />
+          </div>
+          <div class="production-flow">
+            <article><span>01</span><strong>Order received</strong><p>Design, fabric, price range, reference photo, and contact details are captured.</p></article>
+            <article><span>02</span><strong>Design confirmation</strong><p>Neckline, sleeves, length, lace, buttons, lining, and fit preference are locked.</p></article>
+            <article><span>03</span><strong>Measurement check</strong><p>Tailor measurements and comfort notes are reviewed before cutting starts.</p></article>
+            <article><span>04</span><strong>Stitch and deliver</strong><p>Final quote, delivery date, fitting notes, and alteration support stay attached to the order.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="business-snapshot" aria-label="Custom order steps">
+        <article>
+          <span>01</span>
+          <strong>Choose a look</strong>
+          <p>Start from a collection outfit, fabric, or your own reference.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Add details</strong>
+          <p>Choose fabric, style changes, size notes, and deadline.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Confirm quote</strong>
+          <p>Get clarity before stitching starts.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>Stay updated</strong>
+          <p>Keep order notes and support in one place.</p>
+        </article>
+      </section>
+
+      <section class="wardrobe-categories" id="wardrobe" aria-label="Must-have wardrobe categories">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Must-have wardrobe</p>
+            <h2>Choose the garment you want made.</h2>
+          </div>
+          <p>Quick categories help customers start with the right outfit type before they move into fabric, design, sizing, and ordering.</p>
+        </div>
+        <div class="wardrobe-grid">
+          <a class="wardrobe-card wardrobe-card-featured" href="./design.html?garment=Kurti">
+            <img src="./uploads/new-collection-everyday-kurti.jpeg" alt="Kurti wardrobe category" />
+            <span>Daily custom fit</span>
+            <strong>Kurti</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Shirt">
+            <img src="./uploads/new-collection-striped-shirt-set.jpeg" alt="Shirt wardrobe category" />
+            <span>Semi-formal</span>
+            <strong>Shirt</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Trousers">
+            <img src="./uploads/new-collection-white-shirt-trouser.jpeg" alt="Trousers wardrobe category" />
+            <span>Tailored</span>
+            <strong>Trousers</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Dress">
+            <img src="./uploads/new-collection-lilac-tunic.jpeg" alt="Dress wardrobe category" />
+            <span>Custom look</span>
+            <strong>Dress</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Vest">
+            <img src="./uploads/new-collection-ikat-coord.jpeg" alt="Vest wardrobe category" />
+            <span>Layering</span>
+            <strong>Vest</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Top">
+            <img src="./uploads/new-collection-burgundy-wrap-shirt.jpeg" alt="Top wardrobe category" />
+            <span>Statement</span>
+            <strong>Top</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Ready%20To%20Wear%20Saree">
+            <img src="./assets/fabric-uploads/fabric-01.jpeg" alt="Ready to wear saree wardrobe category" />
+            <span>Saree styling</span>
+            <strong>Ready To Wear Saree</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Semi%20Formal">
+            <img src="./uploads/new-collection-white-shirt-trouser.jpeg" alt="Semi formal wardrobe category" />
+            <span>Office ready</span>
+            <strong>Semi Formal</strong>
+          </a>
+          <a class="wardrobe-card" href="./design.html?garment=Blazer">
+            <img src="./uploads/new-collection-striped-shirt-set.jpeg" alt="Blazer wardrobe category" />
+            <span>Power fit</span>
+            <strong>Blazer</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Collections</p>
+            <h2>Pick a look to customize</h2>
+          </div>
+          <div class="gallery-tabs" aria-label="Gallery filters">
+            <button class="is-selected" type="button" data-gallery-filter="All">All</button>
+            <button type="button" data-gallery-filter="Semiformal">Semiformal</button>
+            <button type="button" data-gallery-filter="Traditional">Traditional</button>
+            <button type="button" data-gallery-filter="Customer References">References</button>
+            <button type="button" data-gallery-filter="Finished Outfits">Finished</button>
+            <button type="button" data-gallery-filter="Fabric Samples">Fabric Samples</button>
+          </div>
+        </div>
+        <div class="gallery-grid" data-gallery-grid></div>
+      </section>
+
+      <section class="customer-reviews" aria-label="Customer reviews">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Customer reviews</p>
+            <h2>Customer words that build trust.</h2>
+          </div>
+          <p>Simple name-based reviews sit near the collections now, so visitors see trust before they scroll into the full order story.</p>
+        </div>
+        <div class="review-grid" data-customer-reviews></div>
+      </section>
+
+      <section class="growth-system" id="growth-system" aria-label="Custom order journey">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your order journey</p>
+            <h2>Everything needed for a confident custom fit.</h2>
+          </div>
+          <p>From idea to fabric to measurement, each step is visible so you know exactly what will be stitched.</p>
+        </div>
+        <div class="growth-grid">
+          <article>
+            <span>01</span>
+            <strong>Bring any idea</strong>
+            <p>Start with a photo, collection look, fabric sample, or a fresh outfit request.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Choose the feel</strong>
+            <p>Select fabric by comfort, drape, occasion, and final look.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Measurement confidence</strong>
+            <p>Tailor measurements and fit notes are checked before stitching starts.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Easy repeat orders</strong>
+            <p>Return for office wear, festive looks, family functions, and seasonal outfits.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="market-position" aria-label="ImaginFit specialization">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What we specialize in</p>
+            <h2>Made-to-order womenswear with a clear design path.</h2>
+          </div>
+          <p>Customers should immediately understand that this is for custom outfits, reference photos, fabrics, details, and repeat wardrobe orders.</p>
+        </div>
+        <div class="market-grid">
+          <article>
+            <img src="./uploads/new-collection-everyday-kurti.jpeg" alt="Custom daily wear kurti" />
+            <div>
+              <span>01</span>
+              <strong>Custom daily wear</strong>
+              <p>Kurtis, shirts, trousers, and simple sets made for comfort and repeat use.</p>
+            </div>
+          </article>
+          <article>
+            <img src="./uploads/new-collection-blue-suit.jpeg" alt="Traditional custom suit" />
+            <div>
+              <span>02</span>
+              <strong>Traditional suits</strong>
+              <p>Suit sets, dupattas, festive outfits, and family function looks.</p>
+            </div>
+          </article>
+          <article>
+            <img src="./uploads/new-collection-striped-shirt-set.jpeg" alt="Semi-formal shirt and trouser outfit" />
+            <div>
+              <span>03</span>
+              <strong>Semi-formal fits</strong>
+              <p>Office-ready shirts, trousers, co-ords, and premium everyday tailoring.</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/fabric-uploads/fabric-01.jpeg" alt="Pearl fabric close-up" />
+            <div>
+              <span>04</span>
+              <strong>Fabric-led design</strong>
+              <p>Customers can choose fabric first, then build the outfit around texture and occasion.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="trust-proof" id="proof" aria-label="Customer trust proof">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Why trust us</p>
+            <h2>Custom stitching with a clear process.</h2>
+          </div>
+          <p>Customers should know what happens after they choose a design, how their fit is handled, and how the order moves forward.</p>
+        </div>
+
+        <div class="proof-grid">
+          <article>
+            <strong>1:1 assistant guidance</strong>
+            <p>Customers can share an idea, ask questions, and get directed to fabrics, design, or measurements.</p>
+          </article>
+          <article>
+            <strong>Tailor measurements</strong>
+            <p>Chest, waist, hip, shoulder, sleeve, length, and fit notes are captured before stitching.</p>
+          </article>
+          <article>
+            <strong>Transparent starting prices</strong>
+            <p>Collection cards show starting rates, while final quotes depend on fabric and detailing.</p>
+          </article>
+          <article>
+            <strong>Alteration support</strong>
+            <p>Fit notes stay with the order, making follow-up and alteration conversations easier.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sales-packages" id="packages" aria-label="Custom outfit packages">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Best sellers</p>
+            <h2>Pick the order level.</h2>
+          </div>
+          <p>Simple packages help customers choose faster and help you quote with confidence.</p>
+        </div>
+
+        <div class="package-grid">
+          <article>
+            <div>
+              <p class="eyebrow">Starter</p>
+              <h3>Daily Wear Custom Fit</h3>
+              <strong>From ₹1,999</strong>
+            </div>
+            <p>Kurti, shirt, trousers, or simple daily wear with standard custom measurements.</p>
+            <a href="./design.html?package=Daily%20Wear%20Custom%20Fit">Start Order</a>
+          </article>
+          <article class="is-featured">
+            <div>
+              <p class="eyebrow">Popular</p>
+              <h3>Premium Fabric Fit</h3>
+              <strong>From ₹3,999</strong>
+            </div>
+            <p>Silk, linen, georgette, or premium fabric styling with fit and finish guidance.</p>
+            <a href="./design.html?package=Premium%20Fabric%20Fit">Start Order</a>
+          </article>
+          <article>
+            <div>
+              <p class="eyebrow">Occasion</p>
+              <h3>Wedding / Party Look</h3>
+              <strong>From ₹7,999</strong>
+            </div>
+            <p>Statement suit, saree blouse, lace, lining, and event-ready detailing.</p>
+            <a href="./design.html?package=Wedding%20%2F%20Party%20Look">Start Order</a>
+          </article>
+          <article class="premium-package">
+            <div>
+              <p class="eyebrow">High value</p>
+              <h3>Family / Wedding Capsule</h3>
+              <strong>From ₹24,999</strong>
+            </div>
+            <p>Multiple coordinated outfits, premium fabric, detailing, measurement notes, and delivery planning for one event.</p>
+            <a href="./design.html?package=Family%20%2F%20Wedding%20Capsule">Start Order</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="order-process" aria-label="ImaginFit order process">
+        <div>
+          <p class="eyebrow">Order process</p>
+          <h2>From idea to stitched outfit.</h2>
+        </div>
+        <div class="process-steps">
+          <article>
+            <span>01</span>
+            <strong>Select or design</strong>
+            <p>Choose a collection look or build your own fit from scratch.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Confirm fabric and quote</strong>
+            <p>Pick fabric, add accessories, and get the quote before stitching starts.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Share measurements</strong>
+            <p>Use the tailor measurement form and keep fit notes ready before stitching.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Get support</strong>
+            <p>Your order notes stay saved so fitting, delivery, and changes remain clear.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quality-system" aria-label="Order quality system">
+        <div>
+          <p class="eyebrow">Quality promise</p>
+          <h2>Every custom outfit needs clear checks.</h2>
+        </div>
+        <div class="quality-steps">
+          <article>
+            <strong>Design lock</strong>
+            <p>Garment, fabric, neckline, sleeves, accessories, and reference photo are confirmed before stitching.</p>
+          </article>
+          <article>
+            <strong>Fit lock</strong>
+            <p>Measurements, body notes, margins, and comfort preference are attached to the order.</p>
+          </article>
+          <article>
+            <strong>Quote lock</strong>
+            <p>Starting price becomes final quote after fabric and detail level are selected.</p>
+          </article>
+          <article>
+            <strong>Delivery lock</strong>
+            <p>Need-by date, urgency, and alteration support are saved with the order.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="build-own-fit" id="build-own" aria-label="Build your own custom fit">
+        <div class="build-own-copy">
+          <p class="eyebrow">Create from scratch</p>
+          <h2>Didn’t find your perfect look?</h2>
+          <p>
+            Start with a blank custom fit, choose the garment type, pick fabric, adjust style, and
+            send measurements for stitching.
+          </p>
+        </div>
+        <div class="build-own-actions">
+          <article>
+            <span>1</span>
+            <strong>Choose your garment</strong>
+            <p>Kurti, suit, blouse, dress, shirt, or trousers.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <strong>Design the details</strong>
+            <p>Select fabric, color, neckline, sleeves, fit, and extras.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <strong>Send measurements</strong>
+            <p>Save the order details so the studio can prepare sizing and stitching.</p>
+          </article>
+          <a class="checkout-button" href="./design.html">Start Designing</a>
+          <a class="save-button build-own-secondary" href="./fabrics.html">Choose Fabric First</a>
+        </div>
+      </section>
+
+      <section class="conversion-trust" aria-label="Why customers order from ImaginFit">
+        <div>
+          <p class="eyebrow">Why customers buy</p>
+          <h2>Make the decision feel easy.</h2>
+        </div>
+        <div class="conversion-grid">
+          <article>
+            <strong>Clear quote</strong>
+            <p>Package and budget are captured before follow-up, so the customer knows the starting range.</p>
+          </article>
+          <article>
+            <strong>Real measurement flow</strong>
+            <p>Customers can continue into sizing, tailor notes, and body measurements after choosing a look.</p>
+          </article>
+          <article>
+            <strong>Assistant to order</strong>
+            <p>Customers can ask questions, choose direction, and continue into design or sizing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="repeat-wardrobe" aria-label="Repeat customer wardrobe">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Repeat customers</p>
+            <h2>One order should become a wardrobe.</h2>
+          </div>
+          <p>Growth comes from repeat buying. The site now gives customers clear reasons to return after their first fit works.</p>
+        </div>
+        <div class="repeat-grid">
+          <article>
+            <strong>Monthly office fits</strong>
+            <p>Shirts, trousers, kurtis, and semi-formal sets for daily use.</p>
+          </article>
+          <article>
+            <strong>Festival capsules</strong>
+            <p>Suit sets, brocade blouses, dupattas, and coordinated family looks.</p>
+          </article>
+          <article>
+            <strong>Saved measurements</strong>
+            <p>Once sizing is right, repeat orders become faster and easier.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="customer-stories" aria-label="Customer stories">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Customer stories</p>
+            <h2>Real order journeys build trust.</h2>
+          </div>
+          <p>Use this section for finished outfits, customer reviews, fabric choices, and the result after stitching.</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <img src="./uploads/new-collection-blue-suit.jpeg" alt="Blue custom suit with dupatta" />
+            <div class="story-copy">
+              <span>Traditional suit</span>
+              <h3>From soft blue reference to stitched suit.</h3>
+              <p>Goal: elegant family function outfit with comfortable sleeves, dupatta styling, and tailor measurements.</p>
+              <dl>
+                <div><dt>Fabric</dt><dd>Soft embroidered suit fabric</dd></div>
+                <div><dt>Result</dt><dd>Custom fit, full sleeves, occasion-ready finish</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="story-card">
+            <img src="./uploads/new-collection-striped-shirt-set.jpeg" alt="Striped shirt with cream trousers" />
+            <div class="story-copy">
+              <span>Semi-formal fit</span>
+              <h3>Office-ready shirt and trouser look.</h3>
+              <p>Goal: clean semi-formal outfit with sharper collar, wide-leg bottom, and daily comfort.</p>
+              <dl>
+                <div><dt>Fabric</dt><dd>Structured shirt fabric and cream trouser base</dd></div>
+                <div><dt>Result</dt><dd>Professional look with custom sizing notes</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article class="story-card">
+            <img src="./uploads/new-collection-ikat-coord.jpeg" alt="Black printed co-ord outfit" />
+            <div class="story-copy">
+              <span>Custom co-ord</span>
+              <h3>Printed co-ord made for repeat wear.</h3>
+              <p>Goal: a modern outfit that can work for meetings, dinners, and travel without feeling heavy.</p>
+              <dl>
+                <div><dt>Fabric</dt><dd>Printed structured co-ord fabric</dd></div>
+                <div><dt>Result</dt><dd>Versatile set with pocket and fit preferences</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div class="story-proof-strip">
+          <span>Reference photo accepted</span>
+          <span>Fabric selected before stitching</span>
+          <span>Measurements saved for repeat orders</span>
+        </div>
+      </section>
+
+      <section class="content-engine" aria-label="Content proof engine">
+        <div>
+          <p class="eyebrow">Behind the fit</p>
+          <h2>See how your outfit comes together.</h2>
+        </div>
+        <div class="content-engine-grid">
+          <article>
+            <span>Before</span>
+            <strong>Idea or reference</strong>
+            <p>Your inspiration, selected fabric, and design choices are saved together.</p>
+          </article>
+          <article>
+            <span>During</span>
+            <strong>Cutting and fitting</strong>
+            <p>Measurements, fabric details, stitching progress, and quality checks stay clear.</p>
+          </article>
+          <article>
+            <span>After</span>
+            <strong>Finished outfit</strong>
+            <p>Post final look, customer review, and reorder suggestion for the next occasion.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scale-plan" aria-label="Why choose ImaginFit">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Why choose us</p>
+            <h2>A better way to order custom clothing.</h2>
+          </div>
+          <p>ImaginFit keeps the important parts visible: inspiration, fabric, sizing, details, quote, and support.</p>
+        </div>
+        <div class="scale-grid">
+          <article>
+            <span>Trust</span>
+            <strong>Show finished stories</strong>
+            <p>Add every good order as a customer story with reference, fabric, measurement result, and review.</p>
+          </article>
+          <article>
+            <span>Value</span>
+            <strong>Push premium packages</strong>
+            <p>Use premium fabrics, accessories, family capsules, and urgent delivery as higher-value options.</p>
+          </article>
+          <article>
+            <span>Repeat</span>
+            <strong>Save measurements</strong>
+            <p>Once a customer fit is correct, make the second order faster with saved size and style notes.</p>
+          </article>
+          <article>
+            <span>Reach</span>
+            <strong>Turn orders into content</strong>
+            <p>Post before, during, and after reels so people see proof, not only product photos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq success-faq" aria-label="Ordering questions">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Questions</p>
+            <h2>Before customers pay.</h2>
+          </div>
+        </div>
+        <details open>
+          <summary>How does pricing work?</summary>
+          <p>Each collection shows a starting price. Final price depends on fabric, detailing, accessories, and urgency.</p>
+        </details>
+        <details>
+          <summary>How are measurements taken?</summary>
+          <p>Customers can enter tailor measurements in the design studio and keep body notes attached to the order.</p>
+        </details>
+        <details>
+          <summary>Can customers bring Pinterest references?</summary>
+          <p>Yes. References can be saved in the backend and placed on the design preview for discussion.</p>
+        </details>
+      </section>
+
+      <section class="assistant-section" id="assistant" aria-label="ImaginFit assistant">
+        <div class="assistant-copy">
+          <p class="eyebrow">Assistant</p>
+          <h2>Ask anything before you order.</h2>
+          <p>
+            Share your outfit idea, fabric confusion, occasion, deadline, or sizing question. The
+            assistant will guide you to the right next step.
+          </p>
+          <div class="assistant-actions">
+            <a class="checkout-button" href="./design.html">Start Designing</a>
+            <a class="save-button" href="./fabrics.html">View Fabrics</a>
+          </div>
+        </div>
+
+        <form class="assistant-chat" data-assistant-form>
+          <div class="assistant-message assistant-message-bot">
+            <strong>ImaginFit Assistant</strong>
+            <p>Tell me what you want stitched, or ask about fabric, sizing, price, delivery, or design changes.</p>
+          </div>
+          <div class="assistant-prompts" aria-label="Assistant quick questions">
+            <button type="button" data-assistant-prompt="I have a reference photo and want a similar outfit with changes.">
+              Reference photo
+            </button>
+            <button type="button" data-assistant-prompt="I want a custom kurti for daily wear. Which fabric should I choose?">
+              Fabric help
+            </button>
+            <button type="button" data-assistant-prompt="Give me a price estimate for a custom outfit.">
+              Price estimate
+            </button>
+            <button type="button" data-assistant-prompt="How do I share measurements for my order?">
+              Measurements
+            </button>
+            <button type="button" data-assistant-prompt="How fast can my outfit be ready?">
+              Delivery time
+            </button>
+            <button type="button" data-assistant-prompt="Can I change neckline, sleeves, lace, buttons, lining, or pockets?">
+              Custom changes
+            </button>
+          </div>
+          <label>
+            Your idea or question
+            <textarea
+              name="idea"
+              rows="5"
+              placeholder="Example: I want a pastel suit for a small function, soft fabric, not too heavy."
+              required
+            ></textarea>
+          </label>
+          <button class="checkout-button" type="submit">Ask Assistant</button>
+          <div class="assistant-response" data-assistant-response hidden></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+          <span class="brand-mark">IF</span>
+          <span>ImaginFit Studio</span>
+        </a>
+        <p>Custom clothing that starts with your imagination and ends with your measurements.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#gallery">Collections</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="./design.html">Design Studio</a>
+        <a href="./login.html" data-customer-login>Customer Login</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="mailto:hello@imaginfit.example">hello@imaginfit.example</a>
+        <span>Mon-Sat, 10 AM-7 PM</span>
+        <span>Made-to-order clothing studio</span>
+      </div>
+    </footer>
+
+    <script src="./collections.js"></script>
+  </body>
+</html>

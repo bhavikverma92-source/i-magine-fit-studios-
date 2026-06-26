@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Login | ImaginFit Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html#home" aria-label="Back to ImaginFit Studio">
+        <span class="brand-mark">IF</span>
+        <span>ImaginFit Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Customer navigation">
+        <a href="./index.html#gallery">Collections</a>
+        <a href="./design.html">Design Your Outfit</a>
+      </nav>
+    </header>
+
+    <main class="login-main">
+      <section class="signin-shell">
+        <div class="signin-copy">
+          <p class="eyebrow">Customer sign in</p>
+          <h1>Join your fitting desk.</h1>
+          <p>
+            Save your WhatsApp number once so ImaginFit can send outfit updates, measurement
+            reminders, and order follow-ups.
+          </p>
+          <div class="signin-points">
+            <article>
+              <strong>Design updates</strong>
+              <span>Get messages about selected fabrics, fit notes, and order progress.</span>
+            </article>
+            <article>
+              <strong>Measurement help</strong>
+              <span>Receive reminders if your tailor measurements are missing.</span>
+            </article>
+            <article>
+              <strong>No spam</strong>
+              <span>Your number is saved only for ImaginFit customer communication.</span>
+            </article>
+          </div>
+        </div>
+
+        <form class="signin-card" data-login-form>
+          <div class="signin-card-heading">
+            <p class="eyebrow">Sign in with WhatsApp</p>
+            <h2>Customer details</h2>
+          </div>
+          <label>
+            Full name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            WhatsApp number
+            <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+          </label>
+          <label>
+            Outfit / order interest
+            <input name="business" type="text" />
+          </label>
+          <label class="consent-check">
+            <input name="consent" type="checkbox" required />
+            I agree to receive WhatsApp updates from ImaginFit Studio
+          </label>
+          <button class="checkout-button" type="submit">Save & Continue</button>
+          <p class="operator-status" data-login-status></p>
+          <a class="signin-return" href="./index.html#studio">Continue to outfit designer</a>
+        </form>
+      </section>
+    </main>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

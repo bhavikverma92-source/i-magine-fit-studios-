@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator | ImaginFit Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./admin-access.js"></script>
+  </head>
+  <body class="admin-dashboard">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Back to ImaginFit Studio">
+        <span class="brand-mark">IF</span>
+        <span>ImaginFit Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Operator navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#crm">Orders</a>
+        <a href="#upload">Products</a>
+        <a href="#fabric-manager">Fabrics</a>
+        <a href="#builder-options">Settings</a>
+        <a href="#whatsapp">Messages</a>
+        <a href="./index.html#gallery">Storefront</a>
+      </nav>
+    </header>
+
+    <main class="operator-main">
+      <section class="operator-hero admin-command-hero" id="dashboard">
+        <div>
+          <p class="eyebrow">ImaginFit admin</p>
+          <h1>Business dashboard</h1>
+          <p>
+            Manage orders, customers, fabrics, product photos, WhatsApp follow-ups, and content from
+            one calm workspace.
+          </p>
+        </div>
+        <div class="admin-hero-actions">
+          <a class="checkout-button" href="#crm">Open Orders</a>
+          <a class="save-button" href="#upload">Add Product</a>
+          <a class="save-button" href="./index.html">View Storefront</a>
+        </div>
+      </section>
+
+      <section class="admin-overview" aria-label="Business overview">
+        <div class="admin-overview-grid" data-admin-overview></div>
+        <div class="admin-quick-actions" aria-label="Quick actions">
+          <a href="#crm"><span>01</span><strong>Follow up customers</strong><small>Open CRM pipeline</small></a>
+          <a href="#pinterest-import"><span>02</span><strong>Add inspiration</strong><small>Save looks and references</small></a>
+          <a href="#fabric-manager"><span>03</span><strong>Update fabrics</strong><small>Manage fabric library</small></a>
+          <a href="#content-planner"><span>04</span><strong>Create content</strong><small>Copy captions and posts</small></a>
+        </div>
+      </section>
+
+      <section class="options-panel" id="builder-options" aria-label="Builder option editor">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Builder controls</p>
+            <h2>Edit customer options.</h2>
+          </div>
+          <p>
+            Change labels and prices shown in the outfit builder. Add-on groups are set to no extra
+            cost by default.
+          </p>
+        </div>
+        <div class="options-toolbar">
+          <label>
+            Operator code
+            <input data-options-code type="password" placeholder="Required to save online" />
+          </label>
+          <button class="save-button" type="button" data-options-refresh>Refresh Options</button>
+          <button class="checkout-button" type="button" data-options-save>Save Options</button>
+        </div>
+        <div class="options-editor" data-options-editor></div>
+        <p class="operator-status" data-options-status></p>
+      </section>
+
+      <section class="options-panel fabric-manager-panel" id="fabric-manager" aria-label="Fabric library manager">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fabric library</p>
+            <h2>Add fabrics customers can choose.</h2>
+          </div>
+          <p>Add image, best use, comfort, price range, and care notes for each fabric card.</p>
+        </div>
+
+        <form class="fabric-manager-form" data-fabric-form>
+          <label>
+            Fabric name
+            <input name="name" type="text" value="Cotton" required />
+          </label>
+          <label>
+            Category
+            <select name="category">
+              <option>Daily Wear</option>
+              <option>Semi-formal</option>
+              <option>Premium</option>
+              <option>Festive</option>
+              <option>Dupatta</option>
+              <option>Budget</option>
+            </select>
+          </label>
+          <label>
+            Best for
+            <input name="bestFor" type="text" value="Everyday kurtis and shirts" />
+          </label>
+          <label>
+            Comfort
+            <input name="comfort" type="text" value="Breathable" />
+          </label>
+          <label>
+            Price range
+            <input name="priceRange" type="text" value="₹1,999-₹3,499 outfits" />
+          </label>
+          <label>
+            Care note
+            <input name="care" type="text" value="Easy wash" />
+          </label>
+          <label class="fabric-manager-wide">
+            Image URL
+            <input name="image" type="url" placeholder="https://example.com/fabric.jpg" />
+          </label>
+          <label class="fabric-manager-wide">
+            Selling note
+            <textarea name="note" rows="3">Best first choice for comfort and repeat orders.</textarea>
+          </label>
+          <label>
+            Operator code
+            <input name="operatorCode" type="password" placeholder="Required to save online" />
+          </label>
+          <button class="checkout-button" type="submit">Add Fabric</button>
+        </form>
+
+        <div class="fabric-manager-list" data-fabric-list></div>
+        <p class="operator-status" data-fabric-status></p>
+      </section>
+
+      <section class="options-panel reviews-manager-panel" id="reviews" aria-label="Customer review manager">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Customer reviews</p>
+            <h2>Add real customer feedback.</h2>
+          </div>
+          <p>Add the customer name, outfit type, star rating, and exact review text. These reviews show on the homepage.</p>
+        </div>
+
+        <form class="review-manager-form" data-review-form>
+          <label>
+            Customer name
+            <input name="name" type="text" value="Ananya Sharma" required />
+          </label>
+          <label>
+            Outfit type
+            <input name="outfit" type="text" value="Traditional suit order" required />
+          </label>
+          <label>
+            Rating
+            <select name="rating">
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+            </select>
+          </label>
+          <label class="review-manager-wide">
+            Review text
+            <textarea name="text" rows="3" required>The fit felt comfortable and the suit looked exactly like the soft occasion look I wanted.</textarea>
+          </label>
+          <label class="review-manager-wide">
+            Customer note
+            <input name="note" type="text" value="Family function outfit with dupatta styling and full sleeve comfort." />
+          </label>
+          <button class="checkout-button" type="submit">Add Review</button>
+        </form>
+
+        <div class="review-manager-list" data-review-list></div>
+        <p class="operator-status" data-review-status></p>
+      </section>
+
+      <section class="crm-panel" id="crm" aria-label="Customer relationship manager">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Customer CRM</p>
+            <h2>Close orders before they go cold.</h2>
+          </div>
+          <p>Track hot leads, follow-up dates, order value, need-by dates, and WhatsApp conversations.</p>
+        </div>
+
+        <div class="crm-stats" data-crm-stats></div>
+        <div class="crm-status-board" data-crm-status-board></div>
+        <div class="crm-action-board" data-crm-action-board></div>
+
+        <div class="crm-toolbar">
+          <label class="crm-search">
+            Search customers
+            <input data-crm-search type="search" placeholder="Name, phone, notes, or order" />
+          </label>
+          <label>
+            Pipeline stage
+            <select data-crm-filter>
+              <option value="All">All stages</option>
+              <option>Lead</option>
+              <option>Contacted</option>
+              <option>Measuring</option>
+              <option>Designing</option>
+              <option>Ordered</option>
+              <option>Delivered</option>
+              <option>Follow-up</option>
+            </select>
+          </label>
+          <label>
+            Operator code
+            <input data-crm-code type="password" placeholder="Required to save changes" />
+          </label>
+          <button class="save-button" type="button" data-crm-refresh>Refresh CRM</button>
+        </div>
+
+        <form class="crm-add-form" data-crm-add-form>
+          <label>
+            Customer name
+            <input name="name" type="text" required />
+          </label>
+          <label>
+            WhatsApp number
+            <input name="phone" type="tel" required />
+          </label>
+          <label>
+            Outfit / enquiry
+            <input name="business" type="text" value="Custom outfit enquiry" />
+          </label>
+          <button class="checkout-button" type="submit">Add to CRM</button>
+        </form>
+
+        <div class="crm-list" data-crm-list></div>
+        <p class="operator-status" data-crm-status></p>
+      </section>
+
+      <section class="options-panel content-planner-panel" id="content-planner" aria-label="Daily content planner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Daily content</p>
+            <h2>Never wonder what to post.</h2>
+          </div>
+          <p>
+            Turn every uploaded look into Instagram captions, story ideas, reference copy, and
+            WhatsApp broadcast text.
+          </p>
+        </div>
+        <div class="content-planner" data-content-planner></div>
+        <p class="operator-status" data-content-status></p>
+      </section>
+
+      <section class="whatsapp-panel" id="whatsapp" aria-label="WhatsApp daily customer messages">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WhatsApp desk</p>
+            <h2>One-click daily messages.</h2>
+          </div>
+          <p>
+            Save opted-in customers, prepare one daily message, and open every WhatsApp chat with
+            the message ready to review.
+          </p>
+        </div>
+
+        <div class="whatsapp-grid">
+          <section class="whatsapp-composer" aria-label="Daily WhatsApp message composer">
+            <div class="whatsapp-command-center" aria-label="WhatsApp campaign overview">
+              <article><span>Audience</span><strong data-wa-audience-count>0</strong><small>Saved contacts</small></article>
+              <article><span>Ready</span><strong data-wa-ready-count>0</strong><small>Valid numbers</small></article>
+              <article><span>Photo</span><strong data-wa-photo-state>No</strong><small>Attachment note</small></article>
+            </div>
+
+            <div class="quick-send-bar">
+              <button class="checkout-button" type="button" data-wa-open-all>
+                Prepare Today’s Messages
+              </button>
+              <p data-wa-status>Messages open in WhatsApp Web with text ready. Use real customer numbers.</p>
+            </div>
+
+            <div class="whatsapp-template-bank" aria-label="Message templates">
+              <button type="button" data-wa-template-choice="newLook">New look</button>
+              <button type="button" data-wa-template-choice="followUp">Follow-up</button>
+              <button type="button" data-wa-template-choice="fabric">Fabric help</button>
+              <button type="button" data-wa-template-choice="measurement">Measurements</button>
+              <button type="button" data-wa-template-choice="offer">Weekly slots</button>
+            </div>
+
+            <label>
+              Daily template
+              <textarea data-wa-template rows="6"></textarea>
+            </label>
+            <div class="whatsapp-preview-card">
+              <span>Preview</span>
+              <p data-wa-preview>Message preview appears here.</p>
+            </div>
+            <p class="operator-status">Use {name}, {business}, and {date} to personalize the text.</p>
+
+            <div class="whatsapp-photo-box">
+              <div class="section-title">
+                <h2>Photo to Send</h2>
+                <button type="button" data-wa-clear-photo>Clear</button>
+              </div>
+              <div class="photo-source-grid">
+                <label>
+                  Upload photo
+                  <input data-wa-photo-file type="file" accept="image/*" />
+                </label>
+                <label>
+                  Or paste photo URL
+                  <input data-wa-photo-url type="url" placeholder="https://example.com/photo.jpg" />
+                </label>
+              </div>
+              <div class="reference-preview" data-wa-photo-preview>
+                <span>No WhatsApp photo selected</span>
+              </div>
+              <p class="operator-status">
+                WhatsApp Web cannot attach photos automatically. Open the chat, then use this photo
+                as the attachment.
+              </p>
+            </div>
+
+            <form class="whatsapp-form" data-wa-form>
+              <div class="form-row">
+                <label>
+                  Customer name
+                  <input name="name" type="text" placeholder="Aanya" required />
+                </label>
+                <label>
+                  WhatsApp number
+                  <input name="phone" type="tel" placeholder="+91 98765 43210" required />
+                </label>
+              </div>
+              <label>
+                Business / order context
+                <input name="business" type="text" value="ImaginFit Studio" />
+              </label>
+              <label>
+                Segment
+                <select name="segment">
+                  <option>Lead</option>
+                  <option>Active Order</option>
+                  <option>Measurement Pending</option>
+                  <option>Delivered Customer</option>
+                  <option>VIP</option>
+                </select>
+              </label>
+              <label class="consent-check">
+                <input name="consent" type="checkbox" required />
+                Customer agreed to receive WhatsApp messages
+              </label>
+              <button class="save-button" type="submit">Add Customer</button>
+            </form>
+            <p class="operator-status">
+              Add numbers with country code, for example +91 98765 43210. WhatsApp will only open
+              chats for real WhatsApp numbers.
+            </p>
+          </section>
+
+          <section class="whatsapp-customers" aria-label="Saved WhatsApp customers">
+            <div class="section-heading compact-heading">
+              <div>
+                <p class="eyebrow">Customers</p>
+                <h2 data-wa-count>0 saved</h2>
+              </div>
+              <div class="manager-actions">
+                <button class="save-button" type="button" data-wa-refresh>Refresh</button>
+                <button class="save-button" type="button" data-wa-demo>Demo</button>
+              </div>
+            </div>
+            <div class="whatsapp-filter-row">
+              <label>
+                Segment
+                <select data-wa-segment-filter>
+                  <option>All</option>
+                  <option>Lead</option>
+                  <option>Active Order</option>
+                  <option>Measurement Pending</option>
+                  <option>Delivered Customer</option>
+                  <option>VIP</option>
+                </select>
+              </label>
+              <label>
+                Search
+                <input data-wa-search type="search" placeholder="Name, phone, order context" />
+              </label>
+            </div>
+            <div class="whatsapp-list" data-wa-list></div>
+            <div class="whatsapp-links" data-wa-links hidden></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="options-panel pinterest-panel" id="pinterest-import" aria-label="Inspiration image importer">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Inspiration upload</p>
+            <h2>Add inspiration looks.</h2>
+          </div>
+          <p>
+            Paste any outfit image link, preview it, then save it into collections, references, or
+            fabric samples.
+          </p>
+        </div>
+
+        <form class="operator-form pinterest-import-form" data-pinterest-form>
+          <div class="pinterest-drop-zone" data-pinterest-drop-zone tabindex="0">
+            <strong>Drop outfit inspiration here</strong>
+            <span>Drag an image, paste an image address, or drop a local outfit photo.</span>
+          </div>
+
+          <label>
+            Image or source address
+            <input
+              name="pinterestUrl"
+              type="text"
+              placeholder="Paste outfit image address here"
+              required
+            />
+          </label>
+
+          <div class="operator-preview" data-pinterest-preview>
+            <span>Preview appears here</span>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Design title
+              <input name="title" type="text" value="Inspiration Look" required />
+            </label>
+            <label>
+              Starting price (₹)
+              <input name="price" type="number" min="0" step="100" value="2999" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Gallery section
+              <select name="collection">
+                <option>Semiformal</option>
+                <option>Traditional</option>
+                <option>Customer References</option>
+                <option>Finished Outfits</option>
+                <option>Fabric Samples</option>
+              </select>
+            </label>
+            <label>
+              Category
+              <select name="category">
+                <option>Kurti</option>
+                <option>Suit</option>
+                <option>Saree Blouse</option>
+                <option>Dress</option>
+                <option>Shirt</option>
+                <option>Semi Formal</option>
+                <option>West</option>
+                <option>Trousers</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Fabric
+              <select name="fabric">
+                <option>Cotton</option>
+                <option>Silk</option>
+                <option>Linen</option>
+                <option>Georgette</option>
+              </select>
+            </label>
+            <label>
+              Operator code
+              <input name="operatorCode" type="password" placeholder="Required to save online" />
+            </label>
+          </div>
+
+          <label>
+            Note
+              <input name="note" type="text" value="Saved inspiration" />
+          </label>
+
+          <div class="manager-actions">
+            <button class="save-button" type="button" data-pinterest-preview-button>Preview Link</button>
+            <button class="checkout-button" type="submit">Save Inspiration Look</button>
+          </div>
+          <p class="operator-status" data-pinterest-status>
+            Use a direct image address for the cleanest preview.
+          </p>
+        </form>
+      </section>
+
+      <section class="operator-grid" id="upload">
+        <form class="operator-form" data-design-form>
+          <div class="form-row">
+            <label>
+              Design title
+              <input name="title" type="text" value="Custom Evening Kurti" required />
+            </label>
+            <label>
+              Designer name
+              <input name="designer" type="text" value="Operator" required />
+            </label>
+          </div>
+
+          <label>
+            Operator code
+            <input name="operatorCode" type="password" placeholder="Ask the owner for the code" required />
+          </label>
+
+          <label>
+            Gallery section
+            <select name="collection">
+              <option>Semiformal</option>
+              <option>Traditional</option>
+              <option>Customer References</option>
+              <option>Finished Outfits</option>
+              <option>Fabric Samples</option>
+            </select>
+          </label>
+
+          <div class="photo-source-grid">
+            <label>
+              Upload photo
+              <input name="image" type="file" accept="image/*" />
+            </label>
+            <label>
+              Or paste photo URL
+              <input name="imageUrl" type="url" placeholder="https://example.com/photo.jpg" />
+            </label>
+          </div>
+
+          <div class="operator-preview" data-upload-preview>
+            <span>Preview appears here</span>
+          </div>
+
+          <label>
+            What this photo is for
+            <select name="photoPurpose">
+              <option>Inspiration customers can customize</option>
+              <option>Customer reference idea</option>
+              <option>Finished outfit proof</option>
+              <option>Fabric sample close-up</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>
+              Likes
+              <input name="likes" type="text" value="New" required />
+            </label>
+            <label>
+              Starting price (₹)
+              <input name="price" type="number" min="0" step="100" value="3999" />
+            </label>
+          </div>
+
+          <label>
+            Price note
+            <input name="note" type="text" value="Made to order" />
+          </label>
+
+          <div class="form-row">
+            <label>
+              Category
+              <select name="category">
+                <option>Kurti</option>
+                <option>Suit</option>
+                <option>Saree Blouse</option>
+                <option>Dress</option>
+                <option>Shirt</option>
+                <option>Semi Formal</option>
+                <option>West</option>
+                <option>Trousers</option>
+              </select>
+            </label>
+            <label>
+              Fabric
+              <select name="fabric">
+                <option>Cotton</option>
+                <option>Silk</option>
+                <option>Linen</option>
+                <option>Georgette</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Color
+              <select name="color">
+                <option>White</option>
+                <option>Charcoal</option>
+                <option>Graphite</option>
+                <option>Silver</option>
+                <option>Slate</option>
+                <option>Black</option>
+              </select>
+            </label>
+            <label>
+              Neckline
+              <select name="neckline">
+                <option>Round</option>
+                <option>V Neck</option>
+                <option>Collar</option>
+                <option>Boat</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Sleeves
+              <select name="sleeves">
+                <option>Sleeveless</option>
+                <option>Short</option>
+                <option selected>Three Quarter</option>
+                <option>Full</option>
+              </select>
+            </label>
+            <label>
+              Fit
+              <select name="fit">
+                <option>Relaxed</option>
+                <option selected>Tailored</option>
+                <option>A-Line</option>
+                <option>Long</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Measurement
+              <select name="measurement">
+                <option selected>Tailored Body</option>
+                <option>Body Scan</option>
+                <option>Home Measure</option>
+                <option>In-Studio Fit</option>
+              </select>
+            </label>
+            <label>
+              Extras
+              <select name="extras" multiple size="2">
+                <option>Pockets</option>
+                <option>Lining</option>
+              </select>
+            </label>
+            <label>
+              Accessories
+              <select name="accessories" multiple size="3">
+                <option selected>Lace Border</option>
+                <option>Statement Buttons</option>
+                <option>Dori Tie</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="checkout-button" type="submit">Publish Photo</button>
+          <p class="operator-status" data-status></p>
+        </form>
+
+        <section class="operator-list" id="manage">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Published</p>
+              <h2>Gallery manager</h2>
+            </div>
+            <p>Rename, move, regroup, or delete photos without editing code.</p>
+          </div>
+          <div class="operator-code-panel">
+            <label>
+              Operator code for changes
+              <input data-manager-code type="password" placeholder="Required to save edits" />
+            </label>
+          </div>
+          <div class="operator-gallery" data-admin-designs></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>

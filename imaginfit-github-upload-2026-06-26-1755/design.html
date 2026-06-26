@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Studio | ImaginFit Studio</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+        <span class="brand-mark">IF</span>
+        <span>ImaginFit Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html#gallery">Collections</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="#studio">Design Studio</a>
+        <a href="./login.html" data-customer-login>Login</a>
+      </nav>
+      <button class="icon-button cart-trigger" type="button" aria-label="Open cart">
+        <span class="cart-icon" aria-hidden="true"></span>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </header>
+    <nav class="mobile-order-bar" aria-label="Mobile design actions">
+      <a href="./index.html#home"><span>Home</span>Studio</a>
+      <a href="./index.html#gallery"><span>Looks</span>Browse</a>
+      <a href="#reference"><span>Upload</span>Photo</a>
+      <a href="#measurements"><span>Size</span>Measure</a>
+      <a class="mobile-order-primary" href="#studio"><span>Order</span>Design</a>
+    </nav>
+
+    <main>
+      <section class="designer-shell" id="studio">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Design studio</p>
+            <h2>Create your outfit</h2>
+          </div>
+          <p>
+            The live price and preview respond as customers make choices, so customization feels
+            clear instead of confusing.
+          </p>
+        </div>
+
+        <div class="designer-grid">
+          <section class="preview-panel" aria-label="Live outfit preview" data-drop-zone>
+            <div class="preview-stage">
+              <img class="preview-reference-photo" data-live-reference-photo alt="Uploaded reference preview" hidden />
+              <div class="model-viewer" data-preview>
+                <div class="mockup-canvas" data-model-canvas aria-label="Interactive outfit preview"></div>
+              </div>
+              <div class="drop-zone-hint" data-drop-zone-hint>
+                <strong>Drop here</strong>
+                <span>Looks, fabrics, colors, photos</span>
+              </div>
+            </div>
+            <div class="preview-summary">
+              <div>
+                <p class="eyebrow">Current design</p>
+                <h3 data-design-name>Silk Kurti</h3>
+                <span class="selected-look-note" data-selected-look-note>Ready for customization</span>
+              </div>
+              <strong data-live-price>₹0</strong>
+            </div>
+            <div class="live-change-panel" aria-label="Live fabric and design changes">
+              <span class="live-fabric-swatch" data-live-fabric-swatch></span>
+              <div>
+                <p>Fabric</p>
+                <strong data-live-fabric>Silk</strong>
+              </div>
+              <div>
+                <p>Modification</p>
+                <strong data-live-modification>Round, Three Quarter, Tailored</strong>
+              </div>
+            </div>
+            <ul class="design-tags" data-design-tags></ul>
+          </section>
+
+          <section class="control-panel" aria-label="Customize outfit">
+            <div class="order-mode-banner" data-order-mode-banner>
+              <div>
+                <p class="eyebrow">Selected design</p>
+                <h3>How do you want to continue?</h3>
+              </div>
+              <div class="mode-choice-group" aria-label="Design path">
+                <button type="button" data-mode-choice="customize">Customize Fit</button>
+                <button type="button" data-mode-choice="order">Continue With Sizing</button>
+              </div>
+            </div>
+            <div class="control-group" data-customize-only>
+              <h3>1. Choose Category</h3>
+              <div class="option-grid" data-option-group="category"></div>
+            </div>
+            <div class="control-group selected-fabric-panel">
+              <h3>2. Fabric</h3>
+              <div class="selected-fabric-box">
+                <strong data-selected-fabric>Silk</strong>
+                <a href="./fabrics.html">Change Fabric</a>
+              </div>
+              <div class="option-grid compact fabric-option-grid" data-option-group="fabric" data-customize-only></div>
+            </div>
+            <div class="control-group drag-design-board" data-customize-only>
+              <div class="drag-board-heading">
+                <div>
+                  <h3>Drag Board</h3>
+                  <p class="drag-status" data-drag-status>Drop any card on the preview.</p>
+                </div>
+              </div>
+              <div class="drag-look-strip" data-drag-look-board></div>
+            </div>
+            <div class="control-group" data-customize-only>
+              <h3>3. Color</h3>
+              <div class="swatch-grid" data-option-group="color"></div>
+            </div>
+            <div class="two-column-controls" data-customize-only>
+              <div class="control-group" data-customize-only>
+                <h3>4. Neckline</h3>
+                <div class="option-grid compact" data-option-group="neckline"></div>
+              </div>
+              <div class="control-group">
+                <h3>5. Sleeves</h3>
+                <div class="option-grid compact" data-option-group="sleeves"></div>
+              </div>
+            </div>
+            <div class="two-column-controls">
+              <div class="control-group">
+                <h3>6. Length & Fit</h3>
+                <div class="option-grid compact" data-option-group="fit"></div>
+              </div>
+              <div class="control-group" id="size-guide">
+                <h3>7. Measurements</h3>
+                <div class="option-grid compact" data-option-group="measurement"></div>
+              </div>
+            </div>
+            <div class="control-group tailor-measurements" id="measurements">
+              <div class="measurement-heading">
+                <div>
+                  <h3>Tailor Measurements</h3>
+                  <p>Enter body measurements in inches for a cleaner made-to-order fit.</p>
+                </div>
+                <button class="save-button" type="button" data-fill-sample-measurements>
+                  Sample
+                </button>
+              </div>
+              <div class="measurement-grid">
+                <label>
+                  Chest
+                  <input data-measurement-field="Chest" type="number" min="0" step="0.5" placeholder="36" />
+                </label>
+                <label>
+                  Waist
+                  <input data-measurement-field="Waist" type="number" min="0" step="0.5" placeholder="30" />
+                </label>
+                <label>
+                  Hip
+                  <input data-measurement-field="Hip" type="number" min="0" step="0.5" placeholder="38" />
+                </label>
+                <label>
+                  Shoulder
+                  <input data-measurement-field="Shoulder" type="number" min="0" step="0.5" placeholder="15" />
+                </label>
+                <label>
+                  Sleeve
+                  <input data-measurement-field="Sleeve" type="number" min="0" step="0.5" placeholder="18" />
+                </label>
+                <label>
+                  Top Length
+                  <input data-measurement-field="Top Length" type="number" min="0" step="0.5" placeholder="42" />
+                </label>
+                <label>
+                  Bottom Length
+                  <input data-measurement-field="Bottom Length" type="number" min="0" step="0.5" placeholder="38" />
+                </label>
+                <label>
+                  Armhole
+                  <input data-measurement-field="Armhole" type="number" min="0" step="0.5" placeholder="16" />
+                </label>
+              </div>
+              <label class="measurement-notes">
+                Tailor notes
+                <textarea data-measurement-notes rows="3" placeholder="Example: keep loose at waist, short sleeves, extra margin inside"></textarea>
+              </label>
+            </div>
+            <div class="control-group" data-customize-only>
+              <h3>8. Extras</h3>
+              <div class="checkbox-grid" data-option-group="extras"></div>
+            </div>
+            <div class="control-group" data-customize-only>
+              <h3>9. Accessories</h3>
+              <div class="checkbox-grid" data-option-group="accessories"></div>
+            </div>
+            <div class="control-group reference-uploader" id="reference" data-customize-only>
+              <h3>10. Place Reference on Outfit</h3>
+              <div class="photo-source-grid">
+                <label>
+                  Upload reference design
+                  <input data-reference-file type="file" accept="image/*" />
+                </label>
+                <label>
+                  Or paste reference URL
+                  <input data-reference-url type="url" placeholder="https://example.com/look.jpg" />
+                </label>
+              </div>
+              <div class="reference-preview" data-reference-preview>
+                <span>No reference placed on outfit</span>
+              </div>
+              <button class="save-button reference-save" type="button" data-attach-reference>
+                Place on Outfit
+              </button>
+            </div>
+            <div class="studio-actions">
+              <button class="save-button" type="button" data-save-design>Save Design</button>
+              <button class="checkout-button" type="button" data-add-custom>Add Outfit To Order</button>
+            </div>
+            <a class="mobile-measurement-cta" href="#measurements">Continue to measurements</a>
+          </section>
+        </div>
+      </section>
+
+      <div class="gallery-tabs" hidden></div>
+      <div data-gallery-grid hidden></div>
+      <div data-photo-boards hidden></div>
+      <p data-quiz-result hidden></p>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="./index.html" aria-label="ImaginFit Studio home">
+          <span class="brand-mark">IF</span>
+          <span>ImaginFit Studio</span>
+        </a>
+        <p>Custom clothing that starts with your imagination and ends with your measurements.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="./index.html#gallery">Collections</a>
+        <a href="./fabrics.html">Fabrics</a>
+        <a href="#studio">Design Studio</a>
+        <a href="./login.html" data-customer-login>Customer Login</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="mailto:hello@imaginfit.example">hello@imaginfit.example</a>
+        <span>Mon-Sat, 10 AM-7 PM</span>
+        <span>Made-to-order clothing studio</span>
+      </div>
+    </footer>
+
+    <aside class="cart-panel" aria-label="Saved designs and cart" aria-hidden="true">
+      <div class="cart-panel-header">
+        <div>
+          <p class="eyebrow">Your designs</p>
+          <h2>Ready to stitch</h2>
+        </div>
+        <button class="icon-button close-cart" type="button" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items" data-cart-items>
+        <p class="empty-cart">No saved outfits yet.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong data-cart-total>₹0</strong>
+        </div>
+        <form class="cart-checkout-form" data-cart-checkout>
+          <label>
+            Name
+            <input name="name" type="text" required />
+          </label>
+          <label>
+            Contact number
+            <input name="phone" type="tel" required />
+          </label>
+          <label>
+            Need by
+            <input name="needBy" type="date" />
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="Occasion, comfort, delivery, or alteration notes"></textarea>
+          </label>
+          <button class="checkout-button" type="submit">Save Order</button>
+          <a class="lead-whatsapp-link" data-cart-whatsapp href="#" target="_blank" rel="noopener" hidden>
+            Send Order Details
+          </a>
+          <p class="lead-status" data-cart-status></p>
+        </form>
+      </div>
+    </aside>
+    <div class="scrim" data-scrim></div>
+
+    <script src="./model-preview.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

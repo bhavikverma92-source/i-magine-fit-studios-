@@ -1,0 +1,192 @@
+{
+  "category": [
+    {
+      "label": "Kurti",
+      "price": 2499
+    },
+    {
+      "label": "Suit",
+      "price": 3999
+    },
+    {
+      "label": "Saree Blouse",
+      "price": 2199
+    },
+    {
+      "label": "Dress",
+      "price": 3299
+    },
+    {
+      "label": "Shirt",
+      "price": 1899
+    },
+    {
+      "label": "Trousers",
+      "price": 2299
+    }
+  ],
+  "fabric": [
+    {
+      "label": "Cotton",
+      "price": 0
+    },
+    {
+      "label": "Silk",
+      "price": 799
+    },
+    {
+      "label": "Linen",
+      "price": 499
+    },
+    {
+      "label": "Georgette",
+      "price": 599
+    }
+  ],
+  "color": [
+    {
+      "label": "White",
+      "value": "#f7f7f7"
+    },
+    {
+      "label": "Charcoal",
+      "value": "#222222"
+    },
+    {
+      "label": "Graphite",
+      "value": "#3f3f46"
+    },
+    {
+      "label": "Silver",
+      "value": "#c9c9c9"
+    },
+    {
+      "label": "Slate",
+      "value": "#6b7280"
+    },
+    {
+      "label": "Sage Green",
+      "value": "#315d57"
+    },
+    {
+      "label": "Lilac",
+      "value": "#9da9d8"
+    },
+    {
+      "label": "Burgundy",
+      "value": "#872233"
+    },
+    {
+      "label": "Sky Blue",
+      "value": "#b8ddea"
+    },
+    {
+      "label": "Cream",
+      "value": "#efe3cc"
+    },
+    {
+      "label": "Black",
+      "value": "#171717"
+    }
+  ],
+  "neckline": [
+    {
+      "label": "Round",
+      "price": 0
+    },
+    {
+      "label": "V Neck",
+      "price": 0
+    },
+    {
+      "label": "Collar",
+      "price": 0
+    },
+    {
+      "label": "Boat",
+      "price": 0
+    },
+    {
+      "label": "Halter",
+      "price": 0
+    }
+  ],
+  "sleeves": [
+    {
+      "label": "Sleeveless",
+      "price": 0
+    },
+    {
+      "label": "Short",
+      "price": 0
+    },
+    {
+      "label": "Three Quarter",
+      "price": 0
+    },
+    {
+      "label": "Full",
+      "price": 0
+    }
+  ],
+  "fit": [
+    {
+      "label": "Relaxed",
+      "price": 0
+    },
+    {
+      "label": "Tailored",
+      "price": 0
+    },
+    {
+      "label": "A-Line",
+      "price": 0
+    },
+    {
+      "label": "Long",
+      "price": 0
+    }
+  ],
+  "measurement": [
+    {
+      "label": "Tailored Body",
+      "price": 0
+    },
+    {
+      "label": "Body Scan",
+      "price": 0
+    },
+    {
+      "label": "Home Measure",
+      "price": 0
+    },
+    {
+      "label": "In-Studio Fit",
+      "price": 0
+    }
+  ],
+  "extras": [
+    {
+      "label": "Pockets",
+      "price": 0
+    },
+    {
+      "label": "Lining",
+      "price": 0
+    }
+  ],
+  "accessories": [
+    {
+      "label": "Lace Border",
+      "price": 0
+    },
+    {
+      "label": "Statement Buttons",
+      "price": 0
+    },
+    {
+      "label": "Dori Tie",
+      "price": 0
+    }
+  ]
+}
